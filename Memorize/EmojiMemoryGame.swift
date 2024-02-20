@@ -13,7 +13,7 @@ class EmojiMemoryGame: ObservableObject {
     ]
     
     static func createMemoryGame() -> MemoryGame<String> {
-        return MemoryGame(numberOfPairsCards: 18) { pairIndex in
+        return MemoryGame(numberOfPairsCards: 3) { pairIndex in
             if emojis.indices.contains(pairIndex) {
                 return emojis[pairIndex]
             } else {
